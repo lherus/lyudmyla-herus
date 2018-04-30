@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Josefin+Sans|Lobster');
+
+:root {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    background: url(img/fon_page.jpg) #f7eaca;
+    background-size: cover; 
+}
+
+.title-img {
+    max-width: 100%
+}
+
+body {
+    margin: 2%
+}
+
+header div {
+    float: right;
+	list-style: none;
+	padding: 5px;
+	margin: 2%;
+}
+
+header nav ul {
+	display: flex;
+    margin: 2% 0;
+    padding: 5px 0;
+    background-color: #ADD8E6;
+}
+
+header nav ul li {
+    list-style-type: none;
+    letter-spacing: 1px;
+    margin: 0 2%;
+}
+
+header nav ul li a {
+    color: white;
+    text-shadow: 2px 2px grey;
+    text-decoration: none;
+}
+
+main section {
+    display: flex;
+}
+
+h1 {
+    text-shadow: 3px 2px grey;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+p {
+    text-align: justify;
+}
+
+main div {
+    display: flex;
+}
+
+main article {
+    padding: 2%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.lable-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    
+    header nav ul {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .lable-toggle {
+        display: block;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #menu-toggle:checked ~ ul {
+        visibility: visible;
+        
+    }
+    
+    main section {
+        display: inline;
+        margin: auto;
+    }
+    
+    main div {
+        display: inline;
+    }
+
+
+
+    
+    
