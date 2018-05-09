@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Pacifico&subset=cyrillic,latin-ext,vietnamese');:root {
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+    background-image: url("img/fon_page.gif");
+    color: #01579B;
+}
+
+header {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.4rem;
+}
+
+main p {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.4rem;
+}
+
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 100%;
+
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    margin: 2%;
+}

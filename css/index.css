@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Gaegu|Josefin+Sans|Lobster');
-
-:root {
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-html {
-    background: url(img/fon_page.jpg) #f7eaca;
-    background-size: cover; 
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Pacifico&subset=cyrillic,latin-ext,vietnamese');:root {
+    font-family: 'Pacifico', cursive;
 }
 
 .title-img {
@@ -14,21 +7,31 @@ html {
 }
 
 body {
-    margin: 2%
+    max-width: 980px;
+    margin: auto;
+    background-image: url("img/fon_page.gif");
+    color: #01579B;
+}
+
+header {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.4rem;
 }
 
 header div {
-    float: right;
-	list-style: none;
-	padding: 5px;
-	margin: 2%;
+    float: left;
+	padding: 0px 5px;
+	margin-top: 2%;
+}
+
+header nav {
+    align-items: center;
 }
 
 header nav ul {
-	display: flex;
-    margin: 2% 0;
-    padding: 5px 0;
+    display: flex;
     background-color: #ADD8E6;
+    margin: 2%;
 }
 
 header nav ul li {
@@ -36,72 +39,84 @@ header nav ul li {
     letter-spacing: 1px;
     margin: 0 2%;
 }
-
 header nav ul li a {
-    color: white;
-    text-shadow: 2px 2px grey;
+    color: #01579B;
+    text-shadow: 2px 2px #9FA8DA;
     text-decoration: none;
 }
 
 main section {
     display: flex;
+    margin: 5%;
 }
 
 h1 {
-    text-shadow: 3px 2px grey;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.8rem;
+    text-shadow: 3px 2px #9FA8DA;
+    letter-spacing: 3px;
     margin-top: 12%;
-    margin-bottom: 12%;
+    margin-left: 12%;
+
 }
 
 p {
     text-align: justify;
-}
-
-main div {
-    display: flex;
+    font-size: 1.4rem;
 }
 
 main article {
     padding: 2%;
 }
 
+main div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer a {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin: 20px;
+    color: #01579B;
+}
+
 #menu-toggle {
     display: none;
 }
 
-.lable-toggle {
+.label-toggle {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     
     header nav ul {
         display: none;
-        visibility: hidden;
     }
-    
-    .lable-toggle {
+
+    .label-toggle {
         display: block;
         cursor: pointer;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        float: right;
+        margin: 2%
     }
     
     #menu-toggle:checked ~ ul {
+        display: block;
         visibility: visible;
+        position: fixed;
+        top: 32px;
+        right: 0px;
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
         
     }
-    
-    main section {
-        display: inline;
-        margin: auto;
-    }
-    
-    main div {
-        display: inline;
+
+
     }
 
 
 
-    
-    
