@@ -9,96 +9,97 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header id="home">
-        <img class="title-img" alt="title" src="img/title_run.jpg">
-        <div>
-            <img id="lang_english" src="img/lang_eng2.png" alt="english">
-            <img id="lang_ukraine" src="img/lang_ukr2.png" alt="ukraine">
-            <img id="lang_polish" src="img/lang_pol2.png" alt="polish">
-        </div>
-        <nav>
-            <input type="checkbox" id="menu-toggle">
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#gallery">GALLERY</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#contacts">CONTACTS</a></li>
-            </ul>
-            <label for="menu-toggle" class="label-toggle">&#9776;</label><br>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <img src="img/myfoto.jpg" alt="Lyudmyla Herus">
-            <h1>Hi, I am LYUDMYLA HERUS</h1>
-        </section>
-            <h2>About me</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at 
-            ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius
-            pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
-            </p>
-                <hr>
+    <div class="container">
+	    <header id="home.html">
+            <img class="title-img" alt="sunny" src="img/title_run.jpg">
             <div>
-                <article>
-                    <h3>Video</h3>
-                    <iframe style="border:0" width="360" height="200"
-                    src="https://www.youtube.com/embed/TORSuS3jjn0"
-                    allowfullscreen></iframe>
-                </article>
-                <article>
-                    <h3>Calendar</h3>
-                    <table id="calendar">
-                        <thead>
-                            <tr><td colspan="4"><td colspan="3">
-                            <tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su
-                        <tbody>
-                    </table>
-                    <script>
-                        var D1 = new Date(),
-                            D1last = new Date(D1.getFullYear(),D1.getMonth()+1,0).getDate(), // последний день месяца
-                            D1Nlast = new Date(D1.getFullYear(),D1.getMonth(),D1last).getDay(), // день недели последнего дня месяца
-                            D1Nfirst = new Date(D1.getFullYear(),D1.getMonth(),1).getDay(), // день недели первого дня месяца
-                            calendar = '<tr>',
-                            month=["January","February","March","April","May","June","July","August","September","October","November","December"]; // название месяца, вместо цифр 0-11
-                        // пустые клетки до первого дня текущего месяца
-                        if (D1Nfirst != 0) {
-                          for(var  i = 1; i < D1Nfirst; i++) calendar += '<td>';
-                        }else{ // если первый день месяца выпадает на воскресенье, то требуется 7 пустых клеток 
-                          for(var  i = 0; i < 6; i++) calendar += '<td>';
-                        }
-                        // дни месяца
-                        for(var  i = 1; i <= D1last; i++) {
-                          if (i != D1.getDate()) {
-                            calendar += '<td>' + i;
-                          }else{
-                            calendar += '<td id="today">' + i;  // сегодняшней дате можно задать стиль CSS
-                          }
-                          if (new Date(D1.getFullYear(),D1.getMonth(),i).getDay() == 0) {  // если день выпадает на воскресенье, то перевод строки
-                            calendar += '<tr>';
-                          }
-                        }
-                        // пустые клетки после последнего дня месяца
-                        if (D1Nlast != 0) {
-                          for(var  i = D1Nlast; i < 7; i++) calendar += '<td>';
-                        }
-                        document.querySelector('#calendar tbody').innerHTML = calendar;
-                        document.querySelector('#calendar thead td:last-child').innerHTML = D1.getFullYear();
-                        document.querySelector('#calendar thead td:first-child').innerHTML = month[D1.getMonth()];
-                    </script>
-                </article>
-                <article>
-                    <h3>Weather</h3>
-                    <div id="meteoprog_informer_standart" data-params="girl:Lviv:300x100:grey:48x50" ><a href="https://www.meteoprog.ua/ua/">погода</a><br /><a href="https://www.meteoprog.ua/ua/weather/Lviv/">Погода в  Львові</a><br /></div><script src="https://www.meteoprog.ua/ua/weather/informer/standart.js"></script>
-                <h3>Get Socialize with me:</h3>
-                    <a href="https://twitter.com/RealFavicon" target="blank"><img src="img/twitter.png" alt="twitter"></a>
-                    <a href="https://www.facebook.com/RealFaviconGenerator" target="blank"><img src="img/facebook.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/RealFaviconGenerator" target="blank"><img src="img/instagram.png" alt="instagram"></a>
-                </article>
+                <img id="lang_english" src="img/lang_eng.png" alt="english">
+                <img id="lang_ukraine" src="img/lang_ukr.png" alt="ukraine">
+                <img id="lang_polish" src="img/lang_pol.png" alt="polish">
             </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contacts">CONTACTS</a></li>
+                </ul>
+                <label for="menu-toggle" class="label-toggle">&#9776;</label><br>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img src="img/myfoto_new.jpg" alt="Lyudmyla Herus">
+                <h1>Hi, I am LYUDMYLA HERUS</h1>
+            </section>
+                <h2>About me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at 
+                ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius
+                pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+                </p>
+                    <hr>
+                <div>
+                    <article>
+                        <h3>Video</h3>
+                        <iframe style="border:0" width="360" height="200"
+                        src="https://www.youtube.com/embed/TORSuS3jjn0"
+                        allowfullscreen></iframe>
+                    </article>
+                    <article>
+                        <h3>Calendar</h3>
+                        <table id="calendar">
+                            <thead>
+                                <tr><td colspan="4"><td colspan="3">
+                                <tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su
+                            <tbody>
+                        </table>
+                        <script>
+                            var D1 = new Date(),
+                                D1last = new Date(D1.getFullYear(),D1.getMonth()+1,0).getDate(), // последний день месяца
+                                D1Nlast = new Date(D1.getFullYear(),D1.getMonth(),D1last).getDay(), // день недели последнего дня месяца
+                                D1Nfirst = new Date(D1.getFullYear(),D1.getMonth(),1).getDay(), // день недели первого дня месяца
+                                calendar = '<tr>',
+                                month=["January","February","March","April","May","June","July","August","September","October","November","December"]; // название месяца, вместо цифр 0-11
+                            // пустые клетки до первого дня текущего месяца
+                            if (D1Nfirst != 0) {
+                              for(var  i = 1; i < D1Nfirst; i++) calendar += '<td>';
+                            }else{ // если первый день месяца выпадает на воскресенье, то требуется 7 пустых клеток 
+                              for(var  i = 0; i < 6; i++) calendar += '<td>';
+                            }
+                            // дни месяца
+                            for(var  i = 1; i <= D1last; i++) {
+                              if (i != D1.getDate()) {
+                                calendar += '<td>' + i;
+                              }else{
+                                calendar += '<td id="today">' + i;  // сегодняшней дате можно задать стиль CSS
+                              }
+                              if (new Date(D1.getFullYear(),D1.getMonth(),i).getDay() == 0) {  // если день выпадает на воскресенье, то перевод строки
+                                calendar += '<tr>';
+                              }
+                            }
+                            // пустые клетки после последнего дня месяца
+                            if (D1Nlast != 0) {
+                              for(var  i = D1Nlast; i < 7; i++) calendar += '<td>';
+                            }
+                            document.querySelector('#calendar tbody').innerHTML = calendar;
+                            document.querySelector('#calendar thead td:last-child').innerHTML = D1.getFullYear();
+                            document.querySelector('#calendar thead td:first-child').innerHTML = month[D1.getMonth()];
+                        </script>
+                    </article>
+                    <article>
+                        <h3>Weather</h3>
+                        <div id="meteoprog_informer_standart" data-params="girl:Lviv:300x100:grey:48x50" ><a href="https://www.meteoprog.ua/ua/">погода</a><br /><a href="https://www.meteoprog.ua/ua/weather/Lviv/">Погода в  Львові</a><br /></div><script src="https://www.meteoprog.ua/ua/weather/informer/standart.js"></script>
+                    <h3>Get Socialize with me:</h3>
+                        <a href="https://twitter.com/RealFavicon" target="blank"><img src="img/twitter.png" alt="twitter"></a>
+                        <a href="https://www.facebook.com/RealFaviconGenerator" target="blank"><img src="img/facebook.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/RealFaviconGenerator" target="blank"><img src="img/instagram.png" alt="instagram"></a>
+                    </article>
+                </div>
+    </div>
     <footer>
         <a href="gallery.html">Next page</a>
-        <br>
     </footer>
     </main>
 </body>

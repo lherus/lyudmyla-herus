@@ -9,64 +9,57 @@
     <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
-    <header id="gallery">
+    <header id="gallery.html">
+            <div>
+                <img id="lang_english" src="img/lang_eng.png" alt="english">
+                <img id="lang_ukraine" src="img/lang_ukr.png" alt="ukraine">
+                <img id="lang_polish" src="img/lang_pol.png" alt="polish">
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contacts">CONTACTS</a></li>
+                </ul>
+                <label for="menu-toggle" class="label-toggle">&#9776;</label><br>
+            </nav>
+        </header>
         <h1>My travels</h1>
     </header>
     <main>
         <section class="category">
-            <h2 id="travels">My travel in USA</h2>
-                <div class="category">
-                    <div class="column">
-                        <a href="gallery/niagara.jpg" class="lightbox" title="niagara">
-                            <p>NIAGARA<img src="gallery/niagara.jpg" alt="niagara"></p>
-                        </a>
-                    </div>
-                    <div class="column">   
-                        <a href="gallery/atlantic_ocean.jpg" class="lightbox" title="atlantic ocean">
-                            <p>ATLANTIC OCEAN<img src="gallery/atlantic_ocean.jpg" alt="atlantic ocean"></p>
-                        </a>
-                    </div>
-                    <div class="column">   
-                        <a href="gallery/las_vegas.jpg" class="lightbox" title="las vegas">
-                            <p>LAS VEGAS<img src="gallery/las_vegas.jpg" alt="las vegas"></p>
-                        </a>
-                    </div>
-                    <div class="column">
-                        <a href="gallery/new_york.jpg" class="lightbox" title="new york">
-                            <p>NEW YORK<img src="gallery/new_york.jpg" alt="new york"></p>
-                        </a>
-                    </div>
-                    <div class="column">   
-                        <a href="gallery/chicago_day.jpg" class="lightbox" title="chicago">
-                            <p>CHICAGO<img src="gallery/chicago_day.jpg" alt="chicago"></p>
-                        </a>
-                    </div>
-                    <div class="column">   
-                        <a href="gallery/chicago_hancock.jpg" class="lightbox" title="hancock">
-                            <p>CHICAGO Hancock<img src="gallery/chicago_hancock.jpg" alt="hancock"></p>
-                        </a>
-                    </div>
-                    <div class="column">   
-                        <a href="gallery/chicago_night.jpg" class="lightbox" title="chicago">
-                            <p>CHICAGO<img src="gallery/chicago_night.jpg" alt="chicago"></p>
-                        </a>
-                    </div>
-                    <div class="column">   
-                        <a href="gallery/miami.jpg" class="lightbox" title="miami">
-                            <p>MIAMI<img src="gallery/miami.jpg" alt="miami"></p>
-                        </a>
-                    </div>
-                    <div class="column">   
-                        <a href="gallery/bloomingdale.jpg" class="lightbox" title="bloomingdale">
-                            <p>BLOOMINGDALE<img src="gallery/bloomingdale.jpg" alt="bloomingdale"></p>
-                        </a>
+            <h4 id="travels">My travel in USA</h4>
+                <div class="container">Chicago
+                    <div class="image-row">
+                        <a class="example-image-link" href="gallery/chicago_river.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_river.jpg" alt="CHICAGO River"></a>
+                        <a class="example-image-link" href="gallery/chicago_day.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_day.jpg" alt="Fly over CHICAGO"></a>
+                        <a class="example-image-link" href="gallery/chicago_hancock.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_hancock.jpg"  alt="Chicago Hancock"></a>
+                        <a class="example-image-link" href="gallery/chicago_night.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_night.jpg"  alt="CHICAGO at night"></a>
                     </div>
                 </div>
+                <div class="container">Miami
+                    <div class="image-row">
+                        <a class="example-image-link" href="gallery/miami_beach.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami_beach.jpg" alt="Miami Beach"></a>
+                        <a class="example-image-link" href="gallery/miami_road.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami_road.jpg"  alt="Miami Roud"></a>
+                        <a class="example-image-link" href="gallery/miami.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami.jpg" alt="atlantic ocean"></a>
+                    </div>
+                </div>
+                <div class="container">USA
+                    <div class="image-row">
+                        <a class="example-image-link" href="gallery/niagara.jpg" data-lightbox="example"><img class="example-image" src="gallery/niagara.jpg" alt="niagara"></a>
+                        <a class="example-image-link" href="gallery/las_vegas.jpg" data-lightbox="example"><img class="example-image" src="gallery/las_vegas.jpg" alt="las vegas"></a>
+                        <a class="example-image-link" href="gallery/new_york.jpg" data-lightbox="example"><img class="example-image" src="gallery/new_york.jpg" alt="new york"></a>
+                        <a class="example-image-link" href="gallery/bloomingdale.jpg" data-lightbox="example"><img class="example-image" src="gallery/bloomingdale.jpg" alt="bloomingdale"></a>                    
+                    </div>
+                <div>
         </section>
     </main>
     <footer>
-        <a href="gallery.html">Next page</a>
-        <br>
+        <a href="projects.html">Next page</a>
     </footer>
+<script src="js/gallery.js"></script>
 </body>
 </html>

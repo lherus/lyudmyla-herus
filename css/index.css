@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Pacifico&subset=cyrillic,latin-ext,vietnamese');:root {
-    font-family: 'Pacifico', cursive;
+    font-family: "Poppins", sans-serif;
 }
 
 .title-img {
@@ -10,18 +10,18 @@ body {
     max-width: 980px;
     margin: auto;
     background-image: url("img/fon_page.gif");
+    background-size: cover;
     color: #01579B;
 }
 
 header {
-    font-family: 'Dancing Script', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.4rem;
 }
 
 header div {
     float: left;
 	padding: 0px 5px;
-	margin-top: 2%;
 }
 
 header nav {
@@ -74,11 +74,10 @@ main div {
     flex-wrap: wrap;
 }
 
-footer a {
-    font-family: 'Dancing Script', sans-serif;
+footer {
     font-size: 1.4rem;
     letter-spacing: 1px;
-    margin: 20px;
+    margin-bottom: 10px;
     color: #01579B;
 }
 
