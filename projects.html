@@ -4,101 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/logo_sun.png">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Lyudmyla Herus</title>
+    <link rel="stylesheet" href="css/bootstrap-solar.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
-   <header id="gallery.html">
-            <div>
-                <img id="lang_english" src="img/lang_eng.png" alt="english">
-                <img id="lang_ukraine" src="img/lang_ukr.png" alt="ukraine">
-                <img id="lang_polish" src="img/lang_pol.png" alt="polish">
-            </div>
-            <nav>
-                <input type="checkbox" id="menu-toggle">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="#contacts">CONTACTS</a></li>
-                </ul>
-                <label for="menu-toggle" class="label-toggle">&#9776;</label><br>
+   <header class="container" id="projects">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">My WebSite</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link smooth" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth" href="#projects">Projects<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth" href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <img id="lang_english" src="img/lang_eng.png" alt="english">
+                        <img id="lang_ukraine" src="img/lang_ukr.png" alt="ukraine">
+                        <img id="lang_polish" src="img/lang_pol.png" alt="polish">
+                    </div>
+                </div>
             </nav>
-        </header>
     </header>
     <main>
-    <hr>
-        <section id="projects">
-            <h2>WORK PROCESS</h2>
-        <table border>
-                <tbody>
-                    <tr>
-                        <th>IDEA</th>
-                        <th>CONCERT</th>
-                        <th>DESIGN</th>
-                        <th>DEVELOP</th>
-                        <th>TEST</th>
-                        <th>LAUNCH</th>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <h2>PROJECTS</h2>
-            <table border>
-                <tbody>
-                    <tr>
-                        <th><h3>HTML5.Standart</h3><a href="project/standart_html.pptx" target="blank"><img src="img/title.jpg" alt="title"></th>
-                        <th><p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at 
-            ultricies metus viverra.</p></th>
-                    </tr>
-                </tbody>
-            </table border>
-            <table border>
-                <tbody>
-                    <tr>
-                        <th><h3>HTML5.TAG</h3><a href="project/tag_html.pptx" target="blank"><img src="img/title_tag.jpg" alt="title_tag"></th>
-                        <th><p>ultricies metus orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at 
-            viverra.</p></th>
-                    </tr>
-                </tbody>
-            </table border>
-            <table border>
-                <tbody>
-                    <tr>
-                        <th><h3>HTML5.Doctype</h3><a href="project/Doctype.pptx" target="blank"><img src="img/title_doc.jpg" alt="title_doc"></th>
-                        <th><p>ultricies metus orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. 
-                        Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. 
-                        Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
-                        Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus 
-                        varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at 
-            viverra.</p></th>
-                    </tr>
-                </tbody>
-            </table border>
-        <hr>
-        <section id="Gallery">
-            <h2>GRAPHS</h2>
-        <table border>
-                <tbody>
-                    <tr>
-                        <th><h3>Projects foto</h3><a href="img" target="blank"><img src="img/jan.jpg" alt="jan"></th>
-                        <br>
-                    </tr>
-                </tbody>
-        </table>
-        <table border>
-                <tbody>
-                    <br>
-                    <tr>
-                        <th><h3>Other foto</h3><a href="img" target="blank"><img src="img/graphs.jpg" alt="graphs"></th>
-                        <br>
-                    </tr>
-                </tbody>
-        </table>
+         <section class="margin-bottom50 darkarea how-we-do">
+        	<div class="padding110" style="background-size:cover; background-image:url(projects/img/bg-02.png); background-position: center center; background-repeat: no-repeat;">
+                <div class="the-headline text-center">
+        		<h1><span class="accentcolor">WORK PROCESS</span></h1>
+                <div class="decoration" style="border-top: medium solid #ffffff;">
+        				<div class="decoration-inside">
+        				</div>
+        			</div>
+                <h3>Drive results through a combination of deep understanding of your industry.</h3>
+        	</div>
+            <div class="row">
+	                <div class="col-sm-6 our-process">
+                                    <h5><i class="fa fa-caret-right"></i>&nbsp;OUR WORKING PROCESS</h5>
+                                    	<p>Strongly believe that in order to provide best solution, understanding the problem in its best possibal way is the first step to solve a complex problem. We follow the below standard steps to achive it</p>
+                                    <h5><i class="fa fa-caret-right"></i>&nbsp;PLANNING &amp; STRATEGY</h5>
+                                    	<p>Under our Managed Services umbrella, we provide our Clients with ongoing support, including site updates, maintenance.</p>
+                                    <h5><i class="fa fa-caret-right"></i>&nbsp;DESIGN &amp; DEVELOPMENT</h5>
+                                    	<p>Develop initial layout, design, flow and links based on customers requirements and submit them for their review and approval. We work hand-in-hand.</p>
+                                    <h5><i class="fa fa-caret-right"></i>&nbsp;TEST &amp; DELIVER</h5>
+                                    	<p>Strongly believe that in order to provide best solution, understanding the problem in its solution to a complex problem.</p>
+                	            </div>
+                                    <div class="col-sm-6 text-center">
+                                       <div class="flexslider" id="what-we-do">
+                                            <ul class="slides">
+                                            <li><img src="projects/img/app-dev-process-agile.png" alt="app-dev-process-agile"></li>
+                                            <li><img src="projects/img/working-process2.png" alt="progress"></li>
+                                            <li><img src="projects/img/website-design.png" alt="website-design.png"></li>
+                                            <li><img src="projects/img/testing-citrus.png" alt="progress"></li>
+                                             </ul>
+                                    	</div>
+            						</div>
+                
+                    </div>
+        	</div>
+        </section>
+        <section>
+            <div class="jumbotron">
+                    <div id="carouselMytitle" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="intro mx-auto">
+                                    <section>
+                                        <img src="projects/img/title.jpg" alt="pojects title">
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-50" src="projects/img/jan.jpg" alt="progress">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-50" src="projects/img/title_doc.jpg" alt="title docu">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-50" src="projects/img/graphs.jpg" alt="graphs">
+                            </div>
+                            </div>
+                                <a class="carousel-control-prev" href="#carouselMytitle" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselMytitle" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                </a>
+                           </div>         
+                    </div>
+            </div>
+        </section>
+
+    <footer>
+        <a href="contact.html">Next page</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 </body>
-<hr>
-<footer><a href="contact.html">Next page</a>
-</footer>
 </html>

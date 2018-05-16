@@ -4,62 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/logo_sun.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png">
     <title>Lyudmyla Herus</title>
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/bootstrap-solar.css">
+    <link rel="stylesheet" href="css/galler.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>
-    <header id="gallery.html">
-            <div>
-                <img id="lang_english" src="img/lang_eng.png" alt="english">
-                <img id="lang_ukraine" src="img/lang_ukr.png" alt="ukraine">
-                <img id="lang_polish" src="img/lang_pol.png" alt="polish">
-            </div>
-            <nav>
-                <input type="checkbox" id="menu-toggle">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="#contacts">CONTACTS</a></li>
-                </ul>
-                <label for="menu-toggle" class="label-toggle">&#9776;</label><br>
+    <header class="container" id="gallery">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">My WebSite</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link smooth" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth" href="#gallery">Gallery<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth" href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <img id="lang_english" src="img/lang_eng.png" alt="english">
+                        <img id="lang_ukraine" src="img/lang_ukr.png" alt="ukraine">
+                        <img id="lang_polish" src="img/lang_pol.png" alt="polish">
+                    </div>
+                </div>
             </nav>
-        </header>
-        <h1>My travels</h1>
     </header>
-    <main>
-        <section class="category">
-            <h4 id="travels">My travel in USA</h4>
-                <div class="container">Chicago
-                    <div class="image-row">
-                        <a class="example-image-link" href="gallery/chicago_river.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_river.jpg" alt="CHICAGO River"></a>
-                        <a class="example-image-link" href="gallery/chicago_day.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_day.jpg" alt="Fly over CHICAGO"></a>
-                        <a class="example-image-link" href="gallery/chicago_hancock.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_hancock.jpg"  alt="Chicago Hancock"></a>
-                        <a class="example-image-link" href="gallery/chicago_night.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_night.jpg"  alt="CHICAGO at night"></a>
+    <div class="container">
+        <main>
+            <div class="main_welcome">
+            <h1>My travels</h1>
+            <img src="img/travel.jpg" alt="travel">
+            <section class="category">
+                <h4 id="travels">My travel in USA</h4>
+                    <div class="container">Chicago
+                        <div class="image-row">
+                            <a class="example-image-link" href="gallery/chicago_river.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_river_small.jpg" alt="CHICAGO River"></a>
+                            <a class="example-image-link" href="gallery/chicago_day.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_day_small.jpg" alt="Fly over CHICAGO"></a>
+                            <a class="example-image-link" href="gallery/chicago_hancock.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_hancock_small.jpg"  alt="Chicago Hancock"></a>
+                            <a class="example-image-link" href="gallery/chicago_navy_pier.jpg" data-lightbox="example"><img class="example-image" src="gallery/chicago_navy_pier_small.jpg"  alt="CHICAGO, Navy Pier"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="container">Miami
-                    <div class="image-row">
-                        <a class="example-image-link" href="gallery/miami_beach.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami_beach.jpg" alt="Miami Beach"></a>
-                        <a class="example-image-link" href="gallery/miami_road.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami_road.jpg"  alt="Miami Roud"></a>
-                        <a class="example-image-link" href="gallery/miami.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami.jpg" alt="atlantic ocean"></a>
+                    <div class="container">Miami
+                        <div class="image-row">
+                            <a class="example-image-link" href="gallery/miami_fly.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami_fly_small.jpg" alt="Miami Beach"></a>
+                            <a class="example-image-link" href="gallery/miami_florida.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami_florida_small.jpg"  alt="Miami Florida"></a>
+                            <a class="example-image-link" href="gallery/miami_yacht.jpg" data-lightbox="example"><img class="example-image" src="gallery/miami_yacht_small.jpg" alt="Miami"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="container">USA
-                    <div class="image-row">
-                        <a class="example-image-link" href="gallery/niagara.jpg" data-lightbox="example"><img class="example-image" src="gallery/niagara.jpg" alt="niagara"></a>
-                        <a class="example-image-link" href="gallery/las_vegas.jpg" data-lightbox="example"><img class="example-image" src="gallery/las_vegas.jpg" alt="las vegas"></a>
-                        <a class="example-image-link" href="gallery/new_york.jpg" data-lightbox="example"><img class="example-image" src="gallery/new_york.jpg" alt="new york"></a>
-                        <a class="example-image-link" href="gallery/bloomingdale.jpg" data-lightbox="example"><img class="example-image" src="gallery/bloomingdale.jpg" alt="bloomingdale"></a>                    
-                    </div>
-                <div>
-        </section>
-    </main>
-    <footer>
-        <a href="projects.html">Next page</a>
-    </footer>
-<script src="js/gallery.js"></script>
+                    <div class="container">USA
+                        <div class="image-row">
+                            <a class="example-image-link" href="gallery/niagara.jpg" data-lightbox="example"><img class="example-image" src="gallery/niagara_small.jpg" alt="niagara"></a>
+                            <a class="example-image-link" href="gallery/las_vegas_welcom.jpg" data-lightbox="example"><img class="example-image" src="gallery/las_vegas_welcom_small.jpg" alt="las vegas welcom"></a>
+                            <a class="example-image-link" href="gallery/las_vegas_night.jpg" data-lightbox="example"><img class="example-image" src="gallery/las_vegas_night_small.jpg" alt="las vegas at night"></a>
+                            <a class="example-image-link" href="gallery/new_york.jpg" data-lightbox="example"><img class="example-image" src="gallery/new_york_small.jpg" alt="new york"></a>
+                        </div>
+                    <div>
+            </section>
+        <footer>
+            <a href="projects.html">Next page</a>
+        </footer>
+        </main>
+    </div>
+    <!--<script src="js/gallery.js"></script>-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script defer src="js/index.js"></script>
+    <script async src="js/smooth-scroll.js"></script>
 </body>
+
 </html>

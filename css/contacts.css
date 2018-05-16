@@ -1,0 +1,42 @@
+body {
+    max-width: 980px;
+    margin: auto;
+    padding-top: 25px;
+}
+section {
+    max-width: 100%;
+    margin: 5%;
+    text-align: left;
+}
+.contact {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="url"] {
+    width: 400px;
+    box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#contact-form textarea {
+    width: 700px;
+    box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.map {
+    margin-left: 50px;
+   
+}
+
+@media (min-width: 600px)
+.navbar-expand-lg .navbar-collapse {
+    flex-basis: auto;
+}

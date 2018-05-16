@@ -1,0 +1,26 @@
+body {
+    max-width: 980px;
+    margin: auto;
+    list-style-type: none;
+}
+
+main .main_welcome {
+    background: url(img/travel.jpg);
+    max-width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+div {
+    display: block;
+}
+
+.image-row {
+    margin-bottom: 5rem;
+}
+
+main h1 {
+    margin: 5%;
+}
+

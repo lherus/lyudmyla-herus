@@ -1,23 +1,26 @@
-(function() {
-
-$(".lightbox").lightbox({
-  thumbnails: true
+$(document).ready(function() {
+	$('.image-row').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'example-image-link',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
 });
-
-lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
-    
-    
-! function(d, s, id) {
-  const js, fjs = d.getElementsByTagName(s)[0],
-    p = /^http:/.test(d.location) ? 'http' : 'https';
-  if (!d.getElementById(id)) {
-    js = d.createElement(s);
-    js.id = id;
-    js.src = p + '://platform.twitter.com/widgets.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }
-}(document, 'script', 'twitter-wjs');
-    

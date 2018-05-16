@@ -1,68 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Pacifico&subset=cyrillic,latin-ext,vietnamese');:root {
-    font-family: "Poppins", sans-serif;
+#carouselMytitle {
+    height: 500px;
 }
 
-.title-img {
-    max-width: 100%
+#carouselMytitle img {
+    max-height: 450px;
 }
 
 body {
     max-width: 980px;
     margin: auto;
-    background-image: url("img/fon_page.gif");
-    background-size: cover;
-    color: #01579B;
 }
 
-header {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.4rem;
-}
-
-header div {
-    float: left;
-	padding: 0px 5px;
-}
-
-header nav {
-    align-items: center;
-}
-
-header nav ul {
-    display: flex;
-    background-color: #ADD8E6;
-    margin: 2%;
-}
-
-header nav ul li {
-    list-style-type: none;
-    letter-spacing: 1px;
-    margin: 0 2%;
-}
-header nav ul li a {
-    color: #01579B;
-    text-shadow: 2px 2px #9FA8DA;
-    text-decoration: none;
-}
-
-main section {
-    display: flex;
-    margin: 5%;
-}
-
-h1 {
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 1.8rem;
-    text-shadow: 3px 2px #9FA8DA;
-    letter-spacing: 3px;
-    margin-top: 12%;
-    margin-left: 12%;
-
-}
-
-p {
-    text-align: justify;
-    font-size: 1.4rem;
+.intro {
+    max-width: 100%;
+    margin-top: 5%;
+    text-align: center;
 }
 
 main article {
@@ -74,48 +26,11 @@ main div {
     flex-wrap: wrap;
 }
 
-footer {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    color: #01579B;
+@media (min-width: 600px)
+.navbar-expand-lg .navbar-collapse {
+    flex-basis: auto;
 }
 
-#menu-toggle {
-    display: none;
-}
-
-.label-toggle {
-    display: none;
-}
-
-@media screen and (max-width: 800px) {
-    
-    header nav ul {
-        display: none;
-    }
-
-    .label-toggle {
-        display: block;
-        cursor: pointer;
-        float: right;
-        margin: 2%
-    }
-    
-    #menu-toggle:checked ~ ul {
-        display: block;
-        visibility: visible;
-        position: fixed;
-        top: 32px;
-        right: 0px;
-        border: 1px solid black;
-        margin: 10px;
-        padding: 10px;
-        
-    }
-
-
-    }
 
 
 
